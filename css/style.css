@@ -963,21 +963,28 @@ ul.icons {
 	}/*追加指定ここまで*/
 
 
- .hotpepper-button {
-      background-color: #b5002a; /* ホットペッパー風の暗赤色 */
-      color: white;
-      padding: 16px 32px; /* ボタンらしいサイズ感に調整 */
-      border: none;
-      border-radius: 30px; /* しっかりした角丸 */
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      display: inline-block;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 立体感を追加 */
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
+/*btn3-parts
+---------------------------------------------------------------------------*/
+a.btn3-parts {
+	text-decoration: none;display: inline-block;
+	background: linear-gradient(#ff9727, #ff7827);/*背景グラデーション*/
+	color: #fff;	/*文字色*/
+	padding: 1rem 2rem;	/*ボタン内の余白。上下、左右へ。*/
+	font-size: 1.3rem;	/*文字サイズを130%*/
+	border-radius: 5px;	/*角を少しだけ丸くする*/
+	box-shadow: 3px 3px 8px rgba(194,79,10,0.3);	/*ボタンの影。右へ、下へ、ぼかす量、194,79,10は暗いオレンジ系のrgb値で0.3は色が30%出た状態*/
+}
 
-    .hotpepper-button:hover {
-      background-color: #990026; /* ホバー時の濃い赤 */
-      transform: scale(1.05); /* 少し拡大してクリック感を演出 */
-	}
+/*アイコン*/
+a.btn3-parts i {
+	padding-left: 1em;	/*アイコンとテキストの間の余白*/
+}
+
+/*マウスオン時に少しずらす*/
+a.btn3-parts:hover,a.btn4-parts:hover {
+	box-shadow: none;	/*ボックスの影を消す*/
+	position: relative;
+	left: 1px;
+	top: 1px;
+}
+
