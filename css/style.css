@@ -964,18 +964,20 @@ ul.icons {
 
 
  .hotpepper-button {
-      background-color: #b5002a; /* ホットペッパー風の暗い赤 */
+      background-color: #b5002a; /* ホットペッパー風の暗赤色 */
       color: white;
-      padding: 12px 24px;
+      padding: 16px 32px; /* ボタンらしいサイズ感に調整 */
       border: none;
-      border-radius: 6px;
-      font-size: 16px;
+      border-radius: 30px; /* しっかりした角丸 */
+      font-size: 18px;
       font-weight: bold;
       text-decoration: none;
       display: inline-block;
-      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 立体感を追加 */
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     .hotpepper-button:hover {
-      background-color: #990026; /* 少し濃い赤でホバー効果 */
+      background-color: #990026; /* ホバー時の濃い赤 */
+      transform: scale(1.05); /* 少し拡大してクリック感を演出 */
 	}
