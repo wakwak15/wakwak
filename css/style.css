@@ -961,3 +961,21 @@ ul.icons {
 		}
 
 	}/*追加指定ここまで*/
+
+
+ .hotpepper-button {
+      background-color: #b5002a; /* ホットペッパー風の暗い赤 */
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .hotpepper-button:hover {
+      background-color: #990026; /* 少し濃い赤でホバー効果 */
+	}
